@@ -1,0 +1,55 @@
+/* for em */
+article{
+    font-size: 50px;
+}
+h1{
+    font-size: 0.5em;
+    /* font-size: 25px; */
+}
+h3{
+    font-size: 1em;
+}
+button{
+    padding: 0.2em 0.2em;
+    font-size: 1em;
+    /* font-size: 50px; */
+    border-radius: 1em;
+    border-style:solid ;
+}
+ul{
+    font-size: 2em;
+    /* font-size: 50px; */
+}
+/* li{
+    font-size: 1.5em;
+} */
+
+article #rem{
+    /* i am of no use to my family 🥲 */
+    /* but mhy parent's parent body is look at html tag for rem */
+    font-size: 50px;
+}
+html{
+    font-size: 30px;
+}
+
+#rem h1{
+    font-size: 1rem;
+    /* font-size: 25px; */
+}
+#rem h3{
+    font-size: 1rem;
+}
+#rem button{
+    padding: 0.2rem 0.2rem;
+    font-size: 1rem;
+    /* font-size: 50px; */
+    border-radius: 1rem;
+    border-style:solid ;
+}
+#rem ul{
+    font-size: 1rem;
+}
+#rem li{
+    font-size: 1.5rem;
+}

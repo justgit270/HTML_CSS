@@ -1,0 +1,46 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: darkcyan;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 10px;
+}
+div:nth-of-type(even)
+{
+    background-color: antiquewhite;
+    text-align: center;
+}
+#section :nth-of-type(even)
+{
+    position: static;
+    /* text will disturb me else i am never changing position */
+    /* top:100px;
+    margin: 10px; */
+    /* no property related to postion like top,left,righ,bottom,margin,padding has no effect*/
+}
+#Relative :nth-of-type(even)
+{
+    position: relative;
+    /* top:110px; */
+    left:-130px;
+    /* postion vhanges with respect to itself*/
+}
+#Absolute{
+    /* position: relative; */
+}
+#Absolute :nth-of-type(even)
+{
+    position: absolute;
+    top:50px;
+    left: 50px;
+    /* they either get positioned relatedd to body or with thier parent element */
+}
+#Fixed :nth-of-type(even)
+{
+    position: fixed;
+    width:150px;
+    height: 150px;;
+    top:0;
+    left: 0;
+}

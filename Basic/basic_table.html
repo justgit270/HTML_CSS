@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>A TABLE</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>This week</th>
+                <!-- <th></th> -->
+                <th></th>
+                <th>Last week</th>
+                <th>Peak position</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="https://charts-static.billboard.com/img/2023/11/jackharlow-i43-lovinonme-leu-180x180.jpg"> </td>
+                <td><h3>Lovin On Me<br></h3>Jack Harlow</td>
+                <td>20</td>
+                <td>1</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img width="180"  src="https://charts-static.billboard.com/img/2019/09/taylor-swift-9sy-cruelsummer-1kv-344x344.jpg" alt="Lazy loaded image" height="" width="" decoding="async" data-lazy-loaded="1"> </td>
+                <td><h3>Lovin On Me<br></h3>Jack Harlow</td>
+                <td>20</td>
+                <td>1</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="https://charts-static.billboard.com/img/2020/12/the-weeknd-jlk-saveyourtears-e5b-180x180.jpg" alt="" height="" width="" decoding="async" data-lazy-loaded="1"> </td>
+                <td><h3>Save Your Tears<br></h3>Jack Harlow</td>
+                <td>20</td>
+                <td>1</td>
+                <td>8</td>
+            </tr>
+        </tbody>       
+    </table>
+    <h1>A Simple Table</h1>
+    <table border style="border-spacing:0">
+        <thead>
+            <tr>
+                <th>Animal</th>
+                <th>Average Mass/KG</th>
+                <th>Maximum Mass/Pound</th>
+                <th>flighted</th>
+            <tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Osrtich</td>
+                <td>104</td>
+                <td>156.8</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>130</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5</td>
+                <td>39</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Now let's use col and row span </h1>
+    <!-- to do we will put animal flighted and MASS IN One row and other in differnt column -->
+    <table border="1" style="border-spacing:0">
+        <thead>
+            <tr>
+                <!-- Animal will take 2 rows -->
+                <th rowspan="2">Animal</th>
+                <th colspan="2">Mass</th>
+                <th rowspan="2">flighted</th>
+            </tr>
+            <tr>
+
+                <th>KG</th>
+                <th>Maximum Pound</th>
+
+            <tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Osrtich</td>
+                <td>104</td>
+                <td>156.8</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>130</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5</td>
+                <td>39</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Now let's use col and row span a little advance</h1>
+    <table border="1" style="border-spacing: 0;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Movie</th>
+                <th>Rating</th>
+                <th>Review</th>
+                <th colspan="2">Revenue</th>
+            </tr>   
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Harsh</td>
+                <td>5</td>
+                <td>Ek dam mast insam hai</td>
+                <td style="text-align: center;">100</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Harsh</td>
+                <td>5</td>
+                <td>Ek dam mast insam hai</td>
+                <td style="text-align: center;">100</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Harsh</td>
+                <td>5</td>
+                <td>Ek dam mast insam hai</td>
+                <td style="text-align: center;">100</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Harsh</td>
+                <td>5</td>
+                <td>Ek dam mast insam hai</td>
+                <td style="text-align: center;">100</td>
+            </tr>            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" style="text-align: center;">1</td>
+                <td>Ek dam mast insam hai</td>
+                <td style="border: none;"></td>
+            </tr> 
+        </tfoot>
+    </table>
+</body>
+</html>

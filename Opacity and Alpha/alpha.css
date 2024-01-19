@@ -1,0 +1,21 @@
+div{
+    width: 600px;
+    height: 800px;
+    background-color: burlywood;
+    text-align: center;
+    display: inline-block;
+}
+#note{
+    width: 25%;
+    height: 25%;
+    background-color: rgba(255,255,255,0.5);
+    padding-top: 10px;
+    text-align:left;
+    /* inheritance is taking place here */
+}
+#opacity{
+    opacity: 0.25;
+    background-color: cadetblue;
+    width: 25%;
+    height: 25%;
+}

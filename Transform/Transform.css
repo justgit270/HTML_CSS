@@ -1,0 +1,43 @@
+div#Big{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 0, 0);
+    transition: 1s;
+}
+div#Big:hover{
+    border-radius: 25%;
+    background-color: rgb(244, 152, 31);
+}
+div:nth-child(2):hover{
+    margin-top: 100px;
+    margin-left: 150px;
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    transition:margin-left ease  1s;
+}
+div:nth-child(3){
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    transition:margin-left ease-in 1s;
+}
+div:nth-child(4){
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    transition:margin-left ease-in-out 1s;
+}
+div:nth-child(5){
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    transition:margin-left 1s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maraton-Form</title>
+</head>
+<body>
+    <h1>Race Registration!</h1>
+    <form action="">
+        <fieldset>
+            <legend>Marathon Details </legend>
+        <div>
+            <label for="first_name">
+                First Name : 
+                <input type="text" id="first_name" name="fname" required>
+            </label>
+            <label for="last_name">
+                Last Name : 
+                <input type="text" id="last_name" name="lname" required>
+            </label>
+        </div>
+
+        <!-- radio -->
+        <div>
+            <label for="radio">
+                <br>
+                Select race : 
+            </label>
+            <label for="radio1">
+                <br>
+                <input type="radio" name="radio" value="f9" id ="radio1">
+                Fun run marathon 5k
+            </label>
+            <label for="radio2">
+                <br>
+                <input type="radio" name="radio" value="half" id ="radio2">
+                Half marathon
+            </label>
+            <label for="radio3">
+                <br>
+                <input type="radio" name="radio" value="full" id ="radio3">
+                Full marathon
+                <br>
+            </label>
+        </div>
+        <br>
+        <!-- radio ends -->
+        <div>
+            <label for="email">
+                Email :   
+                <input type="email" name="email" id="email" required>
+            </label>
+    
+            <label for="password">
+                Password :
+                <input type="password" required minlength="5" maxlength="10" name="pass">
+            </label>
+        </div>
+
+        <div>
+            <label for="select">
+                <br>
+                Select age group :
+                <select name="age" id="select">
+                    <option value="" >under 18</option>
+                    <option value="18-30">18-30</option>
+                    <option value="30-50">30-50</option>
+                    <option value="50+">50+</option>
+                </select>
+            </label>
+
+        </div>
+        <div>
+            <legend for="dropdown">
+                To select multiple option use contrtol<br>
+            Enter the prodduct you need:
+        </legend>
+            <select name="product" id="dropdown" multiple>
+            <option value="water">Water Bottle</option>
+            <option value="juice">Juice</option>
+            <option value="Protien">Protien Bar</option>
+            <option value="Shake">Protien Shake</option>
+        </select>
+        </div>
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="file" name="" id="">
+        <button>Submit</button>
+        <button><img src="./images/bg.jpg" alt="image" width="150px" height="100px">Click</button>
+        <!-- other way is -->
+        <label for="imagebutton">I am a ssubmit button too -></label>
+        <input type="image" id="imagebutton" name="" src="./images/bg.jpg" alt="image" width="150px" height="100px">
+        </fieldset>
+        <label for="checked">
+            maa chudi hai??
+            <input type="checkbox" id="married" checked>
+        </label>
+    </form>
+    <h1>Lets make another form !!!</h1>
+    <form action="">
+        <fieldset>
+            <legend>
+                Personal Information
+            </legend>
+            <label for="name">
+                Name
+                <input type="text" name="na">
+            </label>
+            <label for="email">
+                Email
+                <input type="text" id="email" name="em">
+            </label>
+            <label for="phone">
+                Phone
+                <input type="text" id="phone" name="ph">
+            </label>
+            <label for="DOB">
+                Date Of Birth
+                <input type="date" name="DOB" id="DOB" >
+            </label>
+            <label for="gen">
+                Gender
+                <label for="male">
+                    <input type="radio" name="gender" id="male" value="male">
+                    Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" id="female" value="female">
+                    Female
+                </label>
+            </label>
+            <label for="country">
+                Country :
+                <select id="section" name="country">
+                    <option value="" >--Please Select Country--</option>
+                    <option value="usa" >United Sates</option>
+                    <option value="india" >India</option>
+                    <option value="japan" >Japan</option>
+                </select>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Address :Street
+                <input type="text" id="street" name="street" placeholder="">
+                City
+                <input type="text" id="city" name="city">
+                State
+                <input type="text" id="state" name="state">
+                Zip-Code
+                <input type="text" id="zip-code" name="zipadd">
+            </legend>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="comment">
+                <span>Comment</span>
+                <textarea name="comment" id="comment" cols="100" rows="10" placeholder="Text Here..."></textarea>
+            </label>
+            <label for="agree">
+                I agree with terms and conditions
+                <input type="checkbox" name="agreement" id="agree" >
+            </label>
+        </fieldset>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

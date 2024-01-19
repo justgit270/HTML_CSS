@@ -1,0 +1,15 @@
+section{
+    width: 70%;
+    height: 500px;
+    background-color: darkgreen;
+}
+div{
+    width: 50%;
+    height: 50%;
+    background-color: palegoldenrod;
+}
+h1{
+    font-size: 100px;
+    border: 1px solid black;
+    line-height:200%;
+}

@@ -1,0 +1,45 @@
+h1{
+    background-color:palegoldenrod ;
+    border: 2px solid black;
+    /* display: inline; */
+    /* in block everything gets respected */
+}
+span{
+    background-color: aqua;
+    border: 2px solid black;
+    /* display: block; */
+}
+p > span{
+    background-color: palevioletred;
+    border: 1px solid black;
+    /* width: 100px; it changes nothing at all i.e; width didn't got respected */
+    /* height: 100px;same with height */
+    padding: 100px; 
+    /* padding gets respected but we se that it's just covering 
+    the area if background is removed from above */
+    margin: 10px;
+    /* horzontal margin gets ignored  */
+}
+p{
+    margin-bottom: 100px;
+}
+div{
+    width: 300px;
+    height: 300px;
+    background-color: palegreen;
+    border: 5px solid black;
+    /* they are block element if we make them inline the damn happens that they overlap each other
+    as they don't respect poroperty of width and height */
+    display: inline;
+}
+.inline-block{
+    width: 300px;
+    height: 300px;
+    background-color: palegreen;
+    border: 5px solid black;
+    /* they are block element if we make them inline the damn happens that they overlap each other
+    as they don't respect poroperty of width and height */
+    /* width heigth margin and padding all works */
+    display: inline-block;
+    padding-top: 150px;
+}
