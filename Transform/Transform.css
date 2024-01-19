@@ -1,43 +1,75 @@
-div#Big{
-    width: 250px;
-    height: 250px;
-    background-color: rgb(255, 0, 0);
-    transition: 1s;
+h1{
+    background-color: #023047;
+    border: 5px solid black;
+    color: #f1faee;
+    width: 300px;
+    padding: 0.7em;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
 }
-div#Big:hover{
-    border-radius: 25%;
-    background-color: rgb(244, 152, 31);
+section:first-of-type h1:nth-of-type(1):hover
+{
+    background-color: #219ebc;
+    transform: rotate(180deg);
+    transition: transform ease-in-out 2s;
 }
-div:nth-child(2):hover{
-    margin-top: 100px;
-    margin-left: 150px;
-    width: 100px;
-    height: 100px;
-    background-color: gold;
-    transition:margin-left ease  1s;
+h1:nth-child(3n)
+{
+    background-color: #ffb703;
 }
-div:nth-child(3){
-    margin-top: 10px;
-    margin-left: 150px;
-    width: 100px;
-    height: 100px;
-    background-color: gold;
-    transition:margin-left ease-in 1s;
+h1:nth-child(4n)
+{
+    background-color: #fb8500;
 }
-div:nth-child(4){
-    margin-top: 10px;
-    margin-left: 150px;
-    width: 100px;
-    height: 100px;
-    background-color: gold;
-    transition:margin-left ease-in-out 1s;
+section:first-of-type h1:nth-of-type(2):hover
+{
+    background-color: #219ebc;
+    transform-origin: bottom left;
+    transform: scale(0.5);
+    /* transform: scaleX(0.5);
+    transform: scale(0.5 , 1); */
+    transition: transform ease-in-out 2s;
 }
-div:nth-child(5){
-    margin-top: 10px;
-    margin-left: 150px;
-    width: 100px;
-    height: 100px;
-    background-color: gold;
-    transition:margin-left 1s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+section:first-of-type h1:nth-of-type(3):hover
+{
+    background-color: #219ebc;
+    transform: translate(100px , 200px);
+    /* transform: scaleX(0.5);
+    transform: scale(0.5 , 1); */
+    transition: transform ease-in-out 2s;
+}
+section:first-of-type h1:nth-of-type(4):hover
+{
+    background-color: #219ebc;
+    transform: translate(-100px);
+    /* transform: scaleX(0.5);
+    transform: scale(0.5 , 1); */
+    transition: transform ease-in-out 2s;
+}
+section:nth-of-type(2) h1:nth-of-type(1):hover
+{
+    background-color: #219ebc;
+    transform: skew(30deg);
+    /* transform: scaleX(0.5);
+    transform: scale(0.5 , 1); */
+    transition: transform ease-in-out 0.5s;
+}
+section:nth-of-type(2) h1:nth-of-type(2):hover
+{
+    background-color: #219ebc;
+    transform: rotate(45deg) translate(100px) skew(18deg);
+    /* transform: scaleX(0.5);
+    transform: scale(0.5 , 1); */
+    transition: transform ease-in-out 0.5s;
+}
+section:nth-of-type(2) h1:nth-of-type(3):hover
+{
+    background-color: #219ebc;
+    transform: rotate(1turn);
+    /* transform: scaleX(0.5);
+    transform: scale(0.5 , 1); */
+    transition: transform ease-in-out 1s;
 }
