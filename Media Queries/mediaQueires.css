@@ -1,0 +1,22 @@
+a{
+    margin: 10% 10% 0px 10%;
+    font-size: 130%;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav{
+    text-align: center;
+}
+h1{
+    color: blueviolet;
+    text-align: center;
+    font-size: 250%;
+}
+@media(max-width:800px){
+    h1{
+        color: bisque
+        ;
+    }
+}
