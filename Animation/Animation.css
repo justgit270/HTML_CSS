@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.center-div {
+  background-color: rgb(0, 24, 66);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#loading {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 1.5rem;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(47, 164, 0);
+  animation-name: sq;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /* animation-timing-function: cubic-bezier(1.075, 0.62, 0.165, 1); */
+  /* animation-delay: 2s; play with it*/
+  /* animation-fill-mode: forwards; when used comment animation-iteration-count: infinite; */
+  animation-direction: alternate-reverse;
+  border-radius: 5%;
+  transition: border-radius 5s;
+}
+
+@keyframes sq {
+  0% {
+    top: 0px;
+    left: -200px;
+    background-color: crimson;
+    transform: rotate(45deg) scale(0.5);
+  }
+  50% {
+    background-color: rgb(157, 20, 220);
+  }
+  100% {
+    top: 0px;
+    left: 200px;
+    background-color: royalblue;
+    transform: rotate(0deg) scale(1.2);
+    /* border-radius: 50%; */
+  }
+}
